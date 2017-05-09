@@ -20,4 +20,9 @@ public class StringCalculatorTest {
         Assert.assertEquals(8, stringCalculator.add("5,3"));
     }
 
+    @Test
+    public void addErrorNumbersShouldBeHandledAsZero() {
+        Assert.assertEquals(3, stringCalculator.add(",3"));
+    }
+
 }
